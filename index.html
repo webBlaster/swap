@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>SWAp Coordination Office</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+      body {
+        font-family: "Roboto", sans-serif;
+      }
+
+      #bg-image-text-two {
+        @media screen and (max-width: 768px) {
+          left: 10% !important;
+        }
+      }
+
+      #logo-with-horses {
+        @media screen and (max-width: 768px) {
+          left: 10% !important;
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-white">
+    <div class="relative">
+      <div class="bg-green-600 h-32 md:h-24 flex justify-center items-center">
+        <img
+          src="https://placehold.co/100x100"
+          alt="National emblem"
+          class="absolute top-4 md:top-10 z-10"
+          id="logo-with-horses"
+        />
+      </div>
+      <div class="relative">
+        <img
+          src="camera-background.avif"
+          alt="Close-up of a camera"
+          class="w-full h-56 object-cover"
+        />
+        <div
+          class="absolute left-[10%] bottom-36 md:bottom-5 md:left-[10%] text-white"
+        >
+          <h2 class="text-xl md:text-3xl font-bold text-left">
+            Media Page of the
+          </h2>
+          <h2 class="text-xl md:text-3xl font-bold text-left">
+            SWAp Coordination Office
+          </h2>
+        </div>
+        <div
+          class="absolute bottom-3 md:bottom-5 md:right-[10%] text-white"
+          id="bg-image-text-two"
+        >
+          <p>This site is still under development</p>
+        </div>
+      </div>
+    </div>
+    <div class="text-center py-8">
+      <p class="text-green-600 text-left ml-[10%] mb-10">
+        Join the media list of the<br class="md:hidden" />
+        SWAp Coordination Office.
+      </p>
+    </div>
+    <div
+      class="w-[95%] md:w-[80%] mx-auto flex justify-center border-2 p-10 rounded-lg mb-10"
+    >
+      <iframe
+        class="w-full"
+        height="800"
+        src="https://docs.google.com/forms/d/e/1FAIpQLScPoPrdUFnJHu5py32UzORJX_522SLVGSE54cr2v9ba77YXMQ/viewform?embedded=true"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0"
+        >Loading…</iframe
+      >
+    </div>
+  </body>
+</html>
